@@ -1,0 +1,28 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.canvas-container,
+.color-palette {
+    display: inline-block;
+    height: 500px;
+    vertical-align: top;
+}
+
+.color-palette {
+    width: 200px;
+}
+
+.color-tab {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

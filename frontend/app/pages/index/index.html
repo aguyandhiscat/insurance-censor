@@ -1,0 +1,28 @@
+<span class="canvas-container">
+    <canvas id="imageCanvas"></canvas>
+</span>
+
+<span class="color-palette">
+    <div ng-repeat="color in colors">
+        <span class="color-tab"
+              ng-style="{'background-color': color[1]}"
+              title="{{color[0]}}"
+              ng-click="pick_color(color[1])"></span>
+
+        <button ng-click="download_for_color(color[1])">Download</button>
+    </div>
+</span>
+
+<div>
+    <input type="file"
+           id="imageLoader"
+           name="imageLoader"/>
+
+    <a href="#"
+       class="button"
+       id="btn-download"
+       download="my-file-name.png">Download</a>
+
+    <button ng-click="go_prev_page()">Prev Page</button>
+    <button ng-click="go_next_page()">Next Page</button>
+</div>
